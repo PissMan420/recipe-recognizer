@@ -1,0 +1,4 @@
+imgui
+imgui[glfw]
+glfw
+pyopengl
