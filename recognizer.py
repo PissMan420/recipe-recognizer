@@ -11,4 +11,9 @@ class Facture(TypedDict):
 
 
 def reconnaitre_facture(mat):
-    """Cette fonction localise une facture dans une image."""
+    """
+    Cette fonction localise une facture dans une image. Cette fonction
+    retourne la facture découverte.
+    """
+    cv2.cvtColor(mat, cv2.COLOR_BGR2RGB, mat)
+    return mat
